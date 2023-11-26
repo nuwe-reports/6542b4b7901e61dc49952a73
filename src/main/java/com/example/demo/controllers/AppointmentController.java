@@ -22,9 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class AppointmentController {
+    private final AppointmentRepository appointmentRepository;
 
     @Autowired
-    AppointmentRepository appointmentRepository;
+    public AppointmentController(AppointmentRepository appointmentRepository){
+        this.appointmentRepository = appointmentRepository;
+    }
 
     @GetMapping("/appointments")
     public ResponseEntity<List<Appointment>> getAllAppointments(){
@@ -51,12 +54,29 @@ public class AppointmentController {
     }
 
     @PostMapping("/appointment")
-    public ResponseEntity<List<Appointment>> createAppointment(@RequestBody Appointment appointment){
-        /** TODO 
-         * Implement this function, which acts as the POST /api/appointment endpoint.
-         * Make sure to check out the whole project. Specially the Appointment.java class
-         */
-        return new ResponseEntity<>(HttpStatus.I_AM_A_TEAPOT);
+    public ResponseEntity<List<Appointment>> createAppointment(@RequestBody Appointment appointment) {
+
+        Appointment newAppointment = new Appointment(
+                appointment.getPatient(),
+                appointment.getDoctor(),
+                appointment.getRoom(),
+                appointment.getStartsAt(),
+                appointment.getFinishesAt()
+        );
+
+
+        if (isInvalidAppointment(newAppointment)) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+
+        if (isAppointmentConflict(newAppointment)) {
+            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+        }
+
+        appointmentRepository.save(newAppointment);
+
+        List<Appointment> allAppointments = appointmentRepository.findAll();
+        return new ResponseEntity<>(allAppointments, HttpStatus.OK);
     }
 
 
@@ -72,7 +92,7 @@ public class AppointmentController {
         appointmentRepository.deleteById(id);
 
         return new ResponseEntity<>(HttpStatus.OK);
-        
+
     }
 
     @DeleteMapping("/appointments")
@@ -80,5 +100,23 @@ public class AppointmentController {
         appointmentRepository.deleteAll();
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    // region: private methods
+    private boolean isInvalidAppointment(Appointment appointment) {
+        return appointment == null ||
+                appointment.getStartsAt() == null ||
+                appointment.getFinishesAt() == null ||
+                appointment.getStartsAt().isEqual(appointment.getFinishesAt());
+    }
+
+    private boolean isAppointmentConflict(Appointment newAppointment) {
+        List<Appointment> existingAppointments = appointmentRepository.findAll();
+
+        return existingAppointments.stream()
+                .anyMatch(newAppointment::overlaps);
+    }
+    // endregion
+
+
 
 }
