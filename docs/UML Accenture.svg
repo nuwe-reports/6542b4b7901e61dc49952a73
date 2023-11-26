@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="24cm" viewBox="467 160 396 461" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="512" y="162" width="153.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="512" y="162" width="153.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:Monaspace Neon;font-style:normal;font-weight:normal" x="588.55" y="179">Person</text>
+    <rect style="fill: #ffffff" x="512" y="190" width="153.1" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="512" y="190" width="153.1" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="515" y="202.4">+firstName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="515" y="218.4">+lastName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="515" y="234.4">+age: Int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="515" y="250.4">+email: String</text>
+    <rect style="fill: #ffffff" x="512" y="258" width="153.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="512" y="258" width="153.1" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="469" y="364" width="81.55" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="469" y="364" width="81.55" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:Monaspace Neon;font-style:normal;font-weight:normal" x="509.775" y="381">Patient</text>
+    <rect style="fill: #ffffff" x="469" y="392" width="81.55" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="469" y="392" width="81.55" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="472" y="404.4">+id: long</text>
+    <rect style="fill: #ffffff" x="469" y="412" width="81.55" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="469" y="412" width="81.55" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="588.4" y="361.7" width="81.55" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="588.4" y="361.7" width="81.55" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:Monaspace Neon;font-style:normal;font-weight:normal" x="629.175" y="378.7">Doctor</text>
+    <rect style="fill: #ffffff" x="588.4" y="389.7" width="81.55" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="588.4" y="389.7" width="81.55" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="591.4" y="402.1">+id: long</text>
+    <rect style="fill: #ffffff" x="588.4" y="409.7" width="81.55" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="588.4" y="409.7" width="81.55" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="717.8" y="363.4" width="145.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="717.8" y="363.4" width="145.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:Monaspace Neon;font-style:normal;font-weight:normal" x="790.375" y="380.4">Room</text>
+    <rect style="fill: #ffffff" x="717.8" y="391.4" width="145.15" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="717.8" y="391.4" width="145.15" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="720.8" y="403.8">+roomName: String</text>
+    <rect style="fill: #ffffff" x="717.8" y="411.4" width="145.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="717.8" y="411.4" width="145.15" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="521.2" y="532.1" width="216.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="521.2" y="532.1" width="216.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:Monaspace Neon;font-style:normal;font-weight:normal" x="629.55" y="549.1">Appointment</text>
+    <rect style="fill: #ffffff" x="521.2" y="560.1" width="216.7" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="521.2" y="560.1" width="216.7" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="524.2" y="572.5">+id: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="524.2" y="588.5">+startAt: LocalDateTime</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Monaspace Xenon;font-style:normal;font-weight:normal" x="524.2" y="604.5">+finishesAt: LocalDateTime</text>
+    <rect style="fill: #ffffff" x="521.2" y="612.1" width="216.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="521.2" y="612.1" width="216.7" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="588.55,285.243 588.55,323 509.775,323 509.775,362.993 "/>
+    <polygon style="fill: #ffffff" points="596.55,285.243 588.55,269.243 580.55,285.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="596.55,285.243 588.55,269.243 580.55,285.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="588.55,285.139 588.55,323 629.175,323 629.175,360.698 "/>
+    <polygon style="fill: #ffffff" points="596.55,285.139 588.55,269.139 580.55,285.139 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="596.55,285.139 588.55,269.139 580.55,285.139 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="509.775,439.243 509.775,484.051 629.55,484.051 629.55,531.095 "/>
+    <polygon style="fill: #ffffff" points="517.775,439.243 509.775,423.243 501.775,439.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="517.775,439.243 509.775,423.243 501.775,439.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="629.175,436.943 629.175,482.901 629.55,482.901 629.55,531.095 "/>
+    <polygon style="fill: #ffffff" points="637.175,436.943 629.175,420.943 621.175,436.943 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="637.175,436.943 629.175,420.943 621.175,436.943 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="790.375,438.643 790.375,483.751 629.55,483.751 629.55,531.095 "/>
+    <polygon style="fill: #ffffff" points="798.375,438.643 790.375,422.643 782.375,438.643 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="798.375,438.643 790.375,422.643 782.375,438.643 "/>
+  </g>
+</svg>
